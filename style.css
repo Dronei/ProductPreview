@@ -111,6 +111,7 @@ article div{
     }
     #div-product img{
         border-radius: 2em 2em 0em 0em;
+        margin-bottom: -4px;
     }
 
     #div-sales{
