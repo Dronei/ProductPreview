@@ -1,0 +1,124 @@
+:root{
+    --v-color: rgb(61 129 104);
+    --v-background-color: rgb(243 234 227);
+    --v-hover-color: rgb(26 64 49);
+}
+
+html{
+    background-color: var(--v-background-color);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+#div-product img{
+    border-radius: 2em 0em 0em 2em;
+    width: 20em;
+    height: 30em;
+}
+
+#div-sales{
+    border-radius: 0em 2em 2em 0em;
+    background-color: white;
+    width: 20em;
+    height: 30em;
+}
+
+article div{
+    padding-left: 30px;
+}
+
+#div-article-category{
+    margin-top: 2em;
+    color: gray;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    
+}
+
+#div-article-header{
+    margin-top: 0.5em;
+    font-size: 2.7em;
+    font-weight: bolder;
+}
+
+#div-article-body{
+    margin-top: 1em;
+    font-size: large;
+    color: gray;
+}
+
+#article-pricing{
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#div-sales-price{
+    font-size: 2em;
+    font-weight: bolder;
+    color: var(--v-color);
+}
+
+#div-standard-price{
+    text-decoration: line-through;
+}
+
+#div-chart{
+    margin-top: 1em;
+}
+
+#div-chart img{
+    margin-right: 5px;
+}
+
+#div-chart button{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--v-color);
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    border-color: var(--v-color);
+    border-radius: 10px;
+    width: 15em;
+    margin-left: 15%;
+    color: white;
+    font-weight: bold;
+}
+
+#div-chart button:hover{
+    background-color: var(--v-hover-color);
+    border-color: var(--v-hover-color);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 600px) {
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+    #div-product img{
+        border-radius: 2em 2em 0em 0em;
+    }
+
+    #div-sales{
+        border-radius: 0em 0em 2em 2em;
+        background-color: white;
+    }
+
+    .attribution{
+        margin-top: 5px;
+    }
+}
